@@ -137,3 +137,9 @@ With branches, Git helps us take risks with our code and gives us the freedom to
 experiment. We will work regularly with local and remote branches, as well as
 local and remote tracking branches. Next, we'll take a look at how branches look
 in practice.
+
+## Resources
+
+- [Git Branch](https://www.atlassian.com/git/tutorials/using-branches)
+- [3.1 Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- [Using branches](https://backlog.com/git-tutorial/using-branches/)
