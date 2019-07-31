@@ -47,6 +47,8 @@ branch is often called the "child" branch. Immediately after branching the child
 from the parent, the commit histories are identical. They run the same code the
 same way because they are, effectively, the same.
 
+![The relationship between parent and child branches](https://curriculum-content.s3.amazonaws.com/programming-univbasics-2/Image_2_Parent_Child%20Branches.png)
+
 As commits are made onto the child branch, we say it is "ahead" of its "parent."
 The "parent" is said to be "behind" in terms of commits. When we merge the
 commits unique to the "child" branch to the "parent" (as we'll see later), the
