@@ -78,6 +78,8 @@ server or a code hosting service like [GitHub](https://github.com). We can
 _push_ a local branch to a remote repository or _pull_ a remote branch to our
 local copy of the repository.
 
+![Illustration of a remote branch](https://curriculum-content.s3.amazonaws.com/git-workflow/Image_4_Remote%20Branches.png)
+
 By default, when we `git clone` the remote is called `origin`. Many Git commands
 assume that if you don't specify a repo explicitly, you mean `origin`. When we
 push our local branch `new-branch-name` to `origin`, we and other users can
@@ -115,6 +117,8 @@ in sync, or up-to-date, with the remote branch using `git fetch`.
 A _local tracking branch_ is a local branch that is tracking another local
 branch. Most often, the local branch is tracking a remote tracking branch that,
 in turn, is tracking a remote branch.
+
+![Illustration of a local branch](https://curriculum-content.s3.amazonaws.com/git-workflow/Image_3_Local%20Branches.png)
 
 This sounds confusing and this is an area that can be really frustrating with
 Git. Don't worry! We'll work through it with you. Let's suppose you want to work
