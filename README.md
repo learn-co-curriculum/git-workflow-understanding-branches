@@ -36,23 +36,50 @@ away using branches.
 
 ## Define a Git Branch
 
-A _branch_ is a copy of a certain portion of your project's commit history
-stored under a new name. Branching allows us to strike out from the original
-project and isolate our new, experimental work from already working code.
-Changes in the branch that we created from the original will not affect the
-original unless we take action to integrate those changes.
-
-The branch we create from is often called the "parent" branch. The branched-off
-branch is often called the "child" branch. Immediately after branching the child
-from the parent, the commit histories are identical. They run the same code the
-same way because they are, effectively, the same.
+A _branch_ is a history of the commits, or "checkins" or "savepoints" pointed
+to by a name, called the "branch name."
 
 ![The relationship between parent and child branches](https://curriculum-content.s3.amazonaws.com/programming-univbasics-2/Image_2_Parent_Child%20Branches.png)
 
-As commits are made onto the child branch, we say it is "ahead" of its "parent."
-The "parent" is said to be "behind" in terms of commits. When we merge the
-commits unique to the "child" branch to the "parent" (as we'll see later), the
-two become "equal" again.
+In this image, the main branch is called `master`. In fact the default, main,
+most-important  branch in a Git repository is `master`.
+
+> **IMPORTANT**: The default "main" branch in a Git repository is called
+> `master`
+
+Branching allows us to take all previous commits with us to a parallel universe
+(or sandbox, or safe zone). In the image above, the `little-feature` branch
+inherits the first blue commit and then adds its own purple commit. The
+`little-feature` branch never comes back to to `master`. Maybe that idea didn't
+work out. Or maybe the developer went on vacation and will get back to it
+later. We don't know, but the work in that branch didn't impact this team's
+ability to add two more commits.
+
+We also see in the image that the second commit of the `master` branch never
+reaches `little-feature`. They're in separate "universes." It's worth
+repeating, whatever changes are in `little-feature` ***have no impact*** on
+`master` or vice-versa.
+
+The teal branch `big-feature` has the first three commits of `master` and adds
+three commits of its own. Again, changes made in `little-feature` are neither
+in `master` nor in `big-feature`.
+
+The branch we start working from is often called the "parent" branch. The
+"split-off" branch is often called the "child" branch. In the image, the parent
+branch is `master` and the child branches are `little-feature` and
+`big-feature`.
+
+Immediately after branching the child from the parent, the commit histories
+are identical. They run the same code the same way because they have the same
+history. We often say those "branches are equal."
+
+![The relationship between parent and child branches](https://curriculum-content.s3.amazonaws.com/programming-univbasics-2/Image_2_Parent_Child%20Branches.png)
+
+As commits are made onto the child branch, we say it is "ahead" of its
+"parent." The "parent" is said to be "behind" in terms of commits. When we
+merge the commits unique to the "child" branch to the "parent" (as we'll see
+later), the two become "equal" again. This is how we create the effect of
+"moving from success to success" that we described earlier.
 
 Now let's clarify some terms around different types of branches and
 related commands before we jump into working with them.
@@ -73,10 +100,13 @@ $ git branch
 
 ## Identify Remote Branches
 
-A **remote branch** is a branch on a repository stored on an organization's
-server or a code hosting service like [GitHub](https://github.com). We can
-_push_ a local branch to a remote repository or _pull_ a remote branch to our
-local copy of the repository.
+A **remote branch** is a branch on a (remote) repository stored on a server or
+a code hosting service like [GitHub](https://github.com).
+
+We can copy the whole repository using `git clone`. Once we have our own copy
+of the repository, we can _push_ new local branches to it, fetch updates from
+remote branches to our local repository, or fetch new branches from the remote
+repository.
 
 ![Illustration of a remote branch](https://curriculum-content.s3.amazonaws.com/git-workflow/Image_4_Remote%20Branches.png)
 
@@ -85,7 +115,7 @@ that repository a human-friendly name called the "shortname." The default
 "shortname" is called `origin`. Many Git commands assume that if you don't
 specify a repository explicitly, you mean `origin`.
 
-We can see a list of all the remotes' shortnames with `git remote`. Usually,
+We can see a list of all the remotes' "shortnames" with `git remote`. Usually,
 there is only one, `origin`, the default. (As you get more skilled, you might
 want to share your code to multiple remotes.)
 
