@@ -41,19 +41,19 @@ to by a name, called the "branch name."
 
 ![The relationship between parent and child branches](https://curriculum-content.s3.amazonaws.com/programming-univbasics-2/Image_2_Parent_Child%20Branches.png)
 
-In this image, the main branch is called `master`. In fact the default, main,
-most-important  branch in a Git repository is `master`.
+In this image, the main (blue) branch is called `master`. In fact the default, main,
+most-important branch in a Git repository is `master`. 
 
 > **IMPORTANT**: The default "main" branch in a Git repository is called
 > `master`
 
-Branching allows us to take all previous commits with us to a parallel universe
-(or sandbox, or safe zone). In the image above, the `little-feature` branch
-inherits the first blue commit and then adds its own purple commit. The
-`little-feature` branch never comes back to to `master`. Maybe that idea didn't
-work out. Or maybe the developer went on vacation and will get back to it
-later. We don't know, but the work in that branch didn't impact this team's
-ability to add two more commits.
+As diagrammed in the image, branching allows us to take all previous commits
+with us to a parallel universe (or sandbox, or safe zone). In the image above,
+the `little-feature` branch inherits the first blue commit and then adds its own
+purple commit. The `little-feature` branch never comes back to to `master`.
+Maybe that idea didn't work out. Or maybe the developer went on vacation and will
+get back to it later. We don't know, but the work in that branch didn't impact
+this team's ability to add two more commits.
 
 We also see in the image that the second commit of the `master` branch never
 reaches `little-feature`. They're in separate "universes." It's worth
