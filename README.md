@@ -39,7 +39,7 @@ away using branches.
 A _branch_ is a history of the commits, or "checkins" or "savepoints" pointed
 to by a name, called the "branch name."
 
-![The relationship between parent and child branches](https://curriculum-content.s3.amazonaws.com/programming-univbasics-2/Image_2_Parent_Child%20Branches.png)
+![Sequence, Selection, and Repitition](https://curriculum-content.s3.amazonaws.com/git-workflow/Image_1_Default_flow%2C%20repetitiopn%2Cselection.png)
 
 In this image, the main (blue) branch is called `master`. In fact the default, main,
 most-important branch in a Git repository is `master`. 
