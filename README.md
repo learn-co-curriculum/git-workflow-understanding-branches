@@ -125,7 +125,7 @@ at all the remotes &mdash; that Git knows about with `git branch -a`.
 The output will include a number of branch names that start with `remotes/`. As
 you might have guessed, those are the remote branch names. `remotes/` signifies
 that it's remote; `origin/` signifies this branch is held on the `origin`
-repository` and, after that last `/`, we see the remote branch name.
+repository and, after that last `/`, we see the remote branch name.
 
 Here's an example (your output may vary slightly):
 
